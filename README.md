@@ -12,6 +12,6 @@ Source: https://www.stockvault.net/photo/131287/man-working-shed
 - [Cloud Installer in a Container](working-shed/cobra_dev/README.md)
 - [Local Installer in a Container](working-shed/cobra_k3d/README.md)
 
-# explore-golang
+# Explore Golang
 
-Explore golang ecosystem scenarios for fun of improving the skills on it
+Explore golang ecosystem scenarios to improve some code patterns usage as it goes and tooling knowlodge. 
