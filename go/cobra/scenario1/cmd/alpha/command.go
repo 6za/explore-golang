@@ -9,6 +9,8 @@ var (
 	someOtherFlagFlag bool
 )
 
+// NewCommand is the parent command of the folder
+// The standard explored, this command is called `NewCommand` to help identify its role.
 func NewCommand() *cobra.Command {
 
 	myActionCmd := &cobra.Command{
@@ -29,6 +31,8 @@ func NewCommand() *cobra.Command {
 	return myActionCmd
 }
 
+//ChildCommand  is a command that is a child of `NewCommand`
+//Its name can be the name of the child action, no standard that I am aware on this naming.
 func ChildCommand() *cobra.Command {
 	childActionCmd := &cobra.Command{
 		Use:   "sub-action",
