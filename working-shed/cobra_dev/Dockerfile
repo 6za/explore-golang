@@ -25,16 +25,16 @@ RUN \
     && chmod +x ./aws-iam-authenticator \
     &&  mv ./aws-iam-authenticator /usr/local/bin  
 
-
-RUN  go install github.com/spf13/cobra-cli@latest
-#RUN  go get golang.org/x/tools/cmd/godoc
-#RUN  go get -u golang.org/x/lint/golint
-RUN  go install honnef.co/go/tools/cmd/staticcheck@latest
 RUN \
     apt-get update && apt-get install -y \
     curl jq vim unzip less \
     && rm -rf /var/lib/apt/lists/* 
+
 RUN useradd -ms /bin/bash developer
 RUN chmod 777 -R /go
 USER developer
+RUN  go install github.com/spf13/cobra-cli@latest
+#RUN  go get golang.org/x/tools/cmd/godoc
+#RUN  go get -u golang.org/x/lint/golint
+RUN  go install honnef.co/go/tools/cmd/staticcheck@latest
 WORKDIR /home/developer/app
