@@ -93,3 +93,13 @@ func ChildCommand() *cobra.Command {
 
 
 
+
+# Sample of execution
+
+```bash 
+ go run . alpha
+
+
+2023-01-24T16:07:02Z INF cmd/alpha/alpha.go:16 > Alpha CMD executed: (someFlag:  )  go_version=go1.18.7 pid=881
+2023-01-24T16:07:02Z INF internal/alphaController/controller.go:7 > Execute alpha steps:  go_version=go1.18.7 pid=881
+```
