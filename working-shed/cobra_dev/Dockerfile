@@ -32,7 +32,7 @@ RUN \
 
 RUN useradd -ms /bin/bash developer
 RUN chmod 777 -R /go
-USER developer
+#USER developer
 RUN  go install github.com/spf13/cobra-cli@latest
 #RUN  go get golang.org/x/tools/cmd/godoc
 #RUN  go get -u golang.org/x/lint/golint
