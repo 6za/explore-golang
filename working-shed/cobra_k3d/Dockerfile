@@ -42,6 +42,7 @@ RUN \
     && chmod +x ./aws-iam-authenticator \
     &&  mv ./aws-iam-authenticator /usr/local/bin
 
+RUN curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 
 RUN  go install github.com/spf13/cobra-cli@latest
 RUN  go install honnef.co/go/tools/cmd/staticcheck@latest
