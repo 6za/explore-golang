@@ -45,7 +45,7 @@ RUN \
 RUN curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 
 RUN  go install github.com/spf13/cobra-cli@latest
-RUN  go install honnef.co/go/tools/cmd/staticcheck@latest
+#RUN  go install honnef.co/go/tools/cmd/staticcheck@latest
 RUN \
     apt-get update && apt-get install -y \
     curl jq vim unzip less \
