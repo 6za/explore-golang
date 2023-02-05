@@ -36,5 +36,5 @@ RUN chmod 777 -R /go
 RUN  go install github.com/spf13/cobra-cli@latest
 #RUN  go get golang.org/x/tools/cmd/godoc
 #RUN  go get -u golang.org/x/lint/golint
-RUN  go install honnef.co/go/tools/cmd/staticcheck@latest
+#RUN  go install honnef.co/go/tools/cmd/staticcheck@latest
 WORKDIR /home/developer/app
