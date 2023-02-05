@@ -22,7 +22,7 @@ RUN mkdir -p /etc/apt/keyrings   && \
 
 
 RUN \
-    curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.21.3/bin/linux/amd64/kubectl \
+    curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.25.3/bin/linux/amd64/kubectl \
     && chmod +x ./kubectl \
     && mv ./kubectl /usr/local/bin/kubectl
 

@@ -8,7 +8,7 @@ RUN apt-get update \
 # bash, openssh, make, openrc for QoL
 
 ARG RELEASE_VERSION=v1.23.0
-ARG KUBECTL_VERSION=v1.21.3
+ARG KUBECTL_VERSION=v1.25.3
 ARG OS=linux
 ARG ARCH=amd64
 ARG OPERATOR_SDK_DL_URL=https://github.com/operator-framework/operator-sdk/releases/download
